@@ -1,0 +1,5 @@
+*.pyc
+*.swp
+*.tmp
+uwsgi.log
+*.pid

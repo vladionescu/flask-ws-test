@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WS Test</title>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js></script>
+    <script type=text/javascript>
+        var socket = io('/logs', {transports: ['websocket']});
+        socket.emit('get_logs', function(data) { console.log(data) });
+        socket.on('message', function(data) { console.log(data) });
+        socket.on('log', function(data) { console.log(data) });
+    </script>
+</head>
+<body>
+    Ok
+</body>
+</html>
