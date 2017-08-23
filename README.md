@@ -8,6 +8,8 @@ Uses Flask with Flask-SocketIO and runs through uWSGI for production deployment.
 
 ## Usage
 
+First modify `chdir` in uwsgi.ini to point to the dir you have this project in.
+
 ```bash
 ./server.sh [start | stop | restart | reload] && tail -f uwsgi.log
 ```
